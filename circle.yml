@@ -1,0 +1,5 @@
+
+test:
+  override:
+    - SHA1=`git subtree split --prefix=app1` && git push git@github.com:mathieud/app1.git $SHA1:refs/heads/master
+    - SHA1=`git subtree split --prefix=app2` && git push git@github.com:mathieud/app2.git $SHA1:refs/heads/master
